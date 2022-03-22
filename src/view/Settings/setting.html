@@ -1,0 +1,43 @@
+<div class="container settings">
+  <div class="absolute-settings">
+    <a class=" sound" href="#/">❮</a>
+    <h1>Settings</h1>
+    <span></span>
+  </div>
+
+  <div class="setting-form">
+    <div class="volume">
+      <p class="title">Volume</p>
+      <input class="range-volume" type="range" name="volume" value="0" min="0" max="1" step="0.01">
+      <div class="img-flex">
+        <img src="../../images/volume-off.svg" alt="">
+        <img src="../../images/volume-on.svg" alt="">
+      </div>
+    </div>
+    
+    <div class="timer">
+      <div class="on-off">
+        <p class="title">Time game</p>
+        <label for="timerstate">On
+          <input  type="checkbox" name='timerstate' id="timerstate">
+          <div class="switch sound"></div>
+        </label>
+      </div>
+
+      <div class="timer-control">
+        <p class="title">Time to answer</p>
+        <div class='flex'>
+          <button class="prev-timer sound" type="button">–</button>
+          <input class="range-timer" type="number" name="senior" min="5" max="30" step="5" value="0" readonly="">
+          <button class="next-timer sound" type="button">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="setting-btn">
+      <button class="btn default-settings sound">Default</button>
+      <a class="btn sound" href="/">Save</a>
+    </div>
+  </div>
+</div>
+
+

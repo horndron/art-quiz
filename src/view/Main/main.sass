@@ -1,0 +1,67 @@
+@font-face
+  font-family: 'Gilroy'
+  src: url('../../fonts/gilroy-regular.woff') format('woff')
+  src: url('../../fonts/gilroy-regular.woff2') format('woff2')
+
+body.frontpage
+  background-image: url(../../images/main-bg.jpg)
+  background-repeat: no-repeat
+  background-position: top center
+  background-size: cover
+
+  main
+    margin-top: auto
+    margin-bottom: 20px
+
+.setting-link
+  position: absolute
+  top: 25px
+  right: 25px
+  width: 30px
+  height: 30px
+  transition: transform 0.5s
+
+  &:hover,
+  &:active
+    transform: rotate(90deg)
+    filter: invert(78%) sepia(65%) saturate(388%) hue-rotate(311deg) brightness(100%) contrast(101%)
+
+.front-container
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  align-items: center
+
+  .logo
+    width: 170px
+    margin-bottom: 32px
+
+  .btn
+    max-width: 268px
+    font-size: 24px
+    margin-bottom: 20px
+
+@media(min-width: 768px)
+  body.frontpage
+    background-image: url(../../images/main-bg768.jpg)
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+
+    .front-container
+      flex-direction: row
+      justify-content: center
+
+      .img-logo
+        width: 100%
+
+        .logo
+          display: block
+          width: 250px
+          margin-bottom: 80px
+          margin-left: auto
+          margin-right: auto
+
+      .btn
+        margin-left: 10px
+        margin-right: 10px

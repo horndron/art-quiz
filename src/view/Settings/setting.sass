@@ -1,0 +1,226 @@
+.settings
+
+  .absolute-settings
+    position: absolute
+    top: 28px
+    left: 25px
+    right: 25px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+    a
+      color: #fff
+      text-decoration: none
+      transition: 0.5s
+
+      &:hover
+        color: #FFBCA2
+        transform: scale(1.1)
+
+    h1
+      font-weight: 600
+      font-size: 24px
+
+.btn
+  margin-bottom: 30px
+  cursor: pointer
+
+.setting-form
+  padding-top: 50px
+
+  input[type="range"]
+    width: 100%
+    height: 4px
+    appearance: none
+    background: linear-gradient(to right, #FFBCA2 0%, #FFBCA2 0%, #C4C4C4 0%, #C4C4C4 100%)
+    cursor: pointer
+
+  input[type="range"].range-timer
+    background: linear-gradient(to right, #FFBCA2 16.66%, #FFBCA2 16.66%, #C4C4C4 0%, #C4C4C4 100%)
+
+  input[type="range"]::-webkit-slider-thumb
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    -webkit-appearance: none
+    background: #fff
+
+  .title
+    text-align: center
+    font-size: 28px
+    font-weight: 600
+    margin-bottom: 22px
+    margin-top: 40px
+
+  .volume
+    padding: 0 15px
+
+    .img-flex
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-top: 10px
+
+      img
+        height: 16px
+
+.save
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+.on-off
+  margin-top: 10px
+  margin-bottom: 25px
+
+  .title
+    margin-top: 30px
+
+  input
+    display: none
+
+  label
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+    .switch
+      position: relative
+      display: inline-block
+      width: 48px
+      height: 24px
+      background-color: #fff
+      margin-left: 10px
+      border-radius: 1000px
+      transition: .4s
+      cursor: pointer
+
+      &:before
+        position: absolute
+        content: ""
+        height: 18px
+        width: 18px
+        left: 3px
+        bottom: 3px
+        background-color: #FFBCA2
+        border-radius: 50%
+        transition: .4s
+
+  input:checked + .switch
+    background-color: #FFBCA2
+
+    &::before
+      background-color: #fff
+      transform: translateX(23px)
+
+.timer-control
+  .flex
+    display: flex
+    align-items: center
+    justify-content: center
+
+    input
+      color: #fff
+      font-size: 24px
+      font-weight: 600
+      text-align: center
+      background: none !important
+      border: none
+
+      &:focus-visible
+        outline: none
+
+    button
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 33px
+      height: 33px
+      color: #000
+      font-size: 30px
+      font-weight: 600
+      background-color: #fff
+      border: none
+      border-radius: 50%
+      cursor: pointer
+
+      &:hover
+        background-color: #FFBCA2
+
+    .prev-timer
+      padding-bottom: 3px
+
+    .next-timer
+      padding-bottom: 2px
+      padding-left: 1px
+
+.setting-btn
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  margin-top: 40px
+
+  .btn
+    min-width: auto
+    width: 150px
+    font-size: 24px
+    margin-bottom: 0
+
+@media(min-width: 399px)
+  .settings
+    .setting-form
+      .setting-btn
+        justify-content: end
+        margin-top: 50px
+
+        a
+          margin-left: 15px
+
+@media(min-width: 649px)
+  .settings
+    .absolute-settings
+      justify-content: start
+
+      a
+        margin-right: 25px
+
+    .setting-form
+      padding-left: 50px
+
+      .title
+        text-align: left
+
+      .volume
+        max-width: 490px
+        padding: 0
+
+      .on-off
+        label
+          justify-content: start
+
+      .timer-control
+        .flex
+          justify-content: start
+
+      .setting-btn
+        margin-top: 60px
+
+        .btn
+          width: 268px
+
+        a
+          margin-left: 15px
+
+@media(min-width: 1199px)
+  .settings
+    .setting-form
+      padding-top: 100px
+      .setting-btn
+        margin-top: 100px
+
+        a
+          margin-left: 15px
