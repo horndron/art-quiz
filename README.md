@@ -2,6 +2,9 @@
 
 **ArtQuiz** - приложение-викторина на знание шедевров живописи и их авторов.
 
+![image](https://user-images.githubusercontent.com/89828396/159542185-4ab50349-90da-4b1a-a85c-65f49959e383.png)
+
+
 ## Ключевые навыки:
 - OOP
 - JavaScript Classes
